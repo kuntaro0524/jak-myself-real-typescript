@@ -1,2 +1,2 @@
-# jak-myself-real-typescript
+# jak-myself-jissen
 Created with CodeSandbox
