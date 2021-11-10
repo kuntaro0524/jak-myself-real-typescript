@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { Todo } from "./Todo";
 
-// Todoの肩指定をやってみる
+// Todoの型指定をやってみる
 type TodoType = {
   userId: number;
   id: number;
