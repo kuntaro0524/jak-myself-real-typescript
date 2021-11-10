@@ -29,7 +29,12 @@ export default function App() {
       <div className="App">
         <Button onClick={onClickFetchData}> data acquisition </Button>
         {todos.map((todo) => (
-          <Todo key={todo.title} title={todo.title} userid={todo.userId} />
+          <Todo
+            key={todo.title}
+            title={todo.title}
+            userId={todo.userId}
+            completed={todo.completed}
+          />
         ))}
       </div>
     </ChakraProvider>
