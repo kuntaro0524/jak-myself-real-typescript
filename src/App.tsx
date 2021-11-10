@@ -4,6 +4,14 @@ import { useState } from "react";
 
 import { Todo } from "./Todo";
 
+// Todoの肩指定をやってみる
+type TodoType = {
+  userId: number;
+  id: number;
+  title: string;
+  completed: boolean;
+};
+
 export default function App() {
   // stateに対する型の指定方法　いったん <any> 型にしてみる
   const [todos, setTodos] = useState<any>([]);
