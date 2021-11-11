@@ -9,7 +9,8 @@ type Props = {
 // Functional Component として定義してあげる
 // その場合には props: Props みたいな型指定ではなく
 // ところがこのFCは「暗黙のうちに」 childrenを受け取る仕様になっていてバグの温床になりそう
-export const Text: FC<Props> = (props) => {
+// ということで ver17 であるうちは VFC というものを利用するということにしておけば良い
+export const Text: VFC<Props> = (props) => {
   const { color, fontSize } = props;
   // スタイルを当てるとき、変数名とprops名が同じならばそのまま書ける
   return <p style={{ color, fontSize }}> Text death. </p>;
