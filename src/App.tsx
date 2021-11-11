@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import { Todo } from "./Todo";
 import { TodoType } from "./types/todo";
+import { Text } from "./Text";
 
 export default function App() {
   // stateに対する型の指定方法　ここも TodoTypeで指定
@@ -20,6 +21,7 @@ export default function App() {
   return (
     <ChakraProvider>
       <div className="App">
+        <Text color="red" fontSize="18px" />
         <Button onClick={onClickFetchData}> data acquisition </Button>
         {todos.map((todo) => (
           <Todo
