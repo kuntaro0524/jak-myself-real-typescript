@@ -3,14 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 
 import { Todo } from "./Todo";
-
-// Todoの型指定をやってみる
-type TodoType = {
-  userId: number;
-  id: number;
-  title: string;
-  completed: boolean;
-};
+import { TodoType } from "./types/todo";
 
 export default function App() {
   // stateに対する型の指定方法　ここも TodoTypeで指定
