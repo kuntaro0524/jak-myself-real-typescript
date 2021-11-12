@@ -12,7 +12,9 @@ export const UserProfile: VFC<Props> = (props) => {
       <dt> Name </dt>
       <dd> {user.name} </dd>
       <dt> Hoby </dt>
-      <dd> {user.hobbies.join(" / ")} </dd>
+      {/* オプショナルチェイニングを利用
+      Userという型の中に定義されていない hobbies があれば nullを返す */}
+      <dd> {user.hobbies?.join(" / ")} </dd>
     </dl>
   );
 };
