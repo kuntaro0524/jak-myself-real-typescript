@@ -10,8 +10,8 @@ import { UserProfile } from "./UserProfile";
 
 // ユーザのプロファイルを一つ定義してみる
 const user: User = {
-  name: "平田邦生",
-  hobbies: ["ゲーム", "映画"]
+  name: "平田邦生"
+  // hobbies: ["ゲーム", "映画"]
 };
 
 export default function App() {
